@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Office North York | Emergency & Family Dentistry</title>
+    <meta name="description" content="Leading dental office in North York offering emergency care, implants, orthodontics, and CDCP services. Walk-ins welcome. Book your appointment today.">
+    
+    <!-- Preload Critical Resources for LCP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Config for Brand Color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#2FADA4',
+                            dark: '#258a83',
+                            light: '#e6f7f6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth Scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Prevent CLS by defining aspect ratios for images */
+        .img-container { position: relative; overflow: hidden; }
+        .img-container img { width: 100%; height: auto; display: block; }
+        
+        /* Utility for AI Overview Optimization - Clear Structure */
+        article h2 { margin-top: 2rem; margin-bottom: 1rem; color: #1f2937; font-weight: 700; }
+        article p { margin-bottom: 1rem; line-height: 1.6; color: #4b5563; }
+    </style>
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dental Office North York",
+      "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Yonge Street",
+        "addressLocality": "North York",
+        "addressRegion": "ON",
+        "postalCode": "M2N 5N5",
+        "addressCountry": "CA"
+      },
+      "telephone": "+14165550199",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "09:00",
+          "closes": "15:00"
+        }
+      ],
+      "medicalSpecialty": ["Orthodontics", "OralSurgery", "GeneralDentistry"]
+    }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="text-2xl font-bold text-brand">Dental<span class="text-gray-800">Office</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-brand font-medium transition">Services</a>
+                    <a href="#emergency" class="text-gray-600 hover:text-brand font-medium transition">Emergency</a>
+                    <a href="#about" class="text-gray-600 hover:text-brand font-medium transition">About</a>
+                    <a href="#contact" class="bg-brand text-white px-5 py-2 rounded-full font-semibold hover:bg-brand-dark transition shadow-lg shadow-brand/30">Book Now</a>
+                </div>
+                <!-- Mobile menu button placeholder -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-brand focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (LCP Optimized) -->
+    <header class="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Using a solid color fallback initially to prevent layout shift, image loads over it -->
+            <div class="absolute inset-0 bg-brand-light opacity-20"></div>
+            <img 
+                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200" 
+                alt="Modern dental office interior with comfortable chair" 
+                class="w-full h-full object-cover opacity-10"
+                width="1200"
+                height="600"
+                fetchpriority="high"
+            >
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:w-2/3">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand/10 text-brand font-semibold text-sm mb-4 tracking-wide uppercase">Accepting New Patients</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    Expert Dental Care in <span class="text-brand">North York</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">
+                    From emergency walk-ins to permanent dental implants, we provide compassionate, high-tech dental services tailored to your family's needs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-white bg-brand hover:bg-brand-dark transition shadow-xl shadow-brand/20">
+                        Book Appointment
+                    </a>
+                    <a href="tel:+14165550199" class="inline-flex justify-center items-center px-8 py-4 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 transition">
+                        Call (416) 555-0199
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Info Bar -->
+    <section class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-700">
+                <div class="p-4">
+                    <h3 class="text-brand font-bold text-lg mb-1">Weekend Emergency Dentist</h3>
+                    <p class="text-gray-400 text-sm">Open Saturdays & Sundays for urgent care.</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-brand font-bold text-lg mb-1">CDCP Dentist</h3>
+                    <p class="text-gray-400 text-sm">Accepting Canadian Dental Care Plan.</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-brand font-bold text-lg mb-1">Walk-In Welcome</h3>
+                    <p class="text-gray-400 text-sm">No appointment needed for emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Comprehensive Dental Services</h2>
+                <p class="mt-4 text-xl text-gray-500">Advanced treatments for a healthier, brighter smile.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition border border-gray-100 group">
+                    <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand transition">
+                        <svg class="w-6 h-6 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Teeth Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Professional hygiene to prevent gum disease and maintain oral health.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition border border-gray-100 group">
+                    <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand transition">
+                        <svg class="w-6 h-6 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Clear Aligners</h3>
+                    <p class="text-gray-600 text-sm">Invisible orthodontic treatment to straighten teeth discreetly.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition border border-gray-100 group">
+                    <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand transition">
+                        <svg class="w-6 h-6 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Dental Fillings</h3>
+                    <p class="text-gray-600 text-sm">Tooth-colored composite fillings to restore decayed teeth naturally.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition border border-gray-100 group">
+                    <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand transition">
+                        <svg class="w-6 h-6 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Dentures</h3>
+                    <p class="text-gray-600 text-sm">Custom-fitted partial and full dentures for restored function.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition border border-gray-100 group">
+                    <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand transition">
+                        <svg class="w-6 h-6 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Tooth Extractions</h3>
+                    <p class="text-gray-600 text-sm">Gentle removal of damaged teeth including wisdom teeth surgery.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition border border-gray-100 group">
+                    <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand transition">
+                        <svg class="w-6 h-6 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Dental Implants</h3>
+                    <p class="text-gray-600 text-sm">Permanent tooth replacement solutions that look and feel natural.</p>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition border border-gray-100 group">
+                    <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand transition">
+                        <svg class="w-6 h-6 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Dental Braces</h3>
+                    <p class="text-gray-600 text-sm">Traditional and ceramic braces for complex orthodontic correction.</p>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition border border-gray-100 group">
+                    <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand transition">
+                        <svg class="w-6 h-6 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Root Canal Therapy</h3>
+                    <p class="text-gray-600 text-sm">Pain-free treatment to save infected teeth and relieve discomfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content / SEO Article Section -->
+    <article class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg prose-teal max-w-none">
+                
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Why Choose Our Dental Office North York?</h2>
+                
+                <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Emergency & Urgent Care</h3>
+                
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">Walk-In Emergency Dentist</h4>
+                <p>Dental emergencies rarely happen during convenient business hours, which is why our clinic prioritizes immediate access for urgent care needs. We understand that sudden trauma or severe discomfort requires prompt attention to prevent further complications and alleviate distress quickly. Our team is prepared to accommodate unscheduled visits, ensuring you receive professional evaluation without lengthy delays.</p>
+
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">Affordable Emergency Dental Care</h4>
+                <p>Financial concerns should never prevent patients from seeking necessary medical intervention during a dental crisis. We offer transparent pricing structures and flexible payment options to make urgent treatments accessible to everyone in the community. Our focus remains on providing high-quality, cost-effective solutions that address the root cause of your pain efficiently.</p>
+
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">Tooth Pain Relief Dentist</h4>
+                <p>Persistent toothaches often signal underlying issues such as infection, decay, or nerve damage that require expert diagnosis. Our dentists utilize advanced diagnostic tools to identify the source of your discomfort and provide targeted relief immediately. We combine compassionate care with effective treatment plans to restore your comfort and oral health rapidly.</p>
+
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">Weekend Emergency Dentist</h4>
+                <p>Many working professionals and families find it difficult to schedule appointments during the standard workweek. Our clinic offers weekend availability to ensure that urgent dental needs are met without disrupting your daily routine. This flexibility allows us to serve the North York community more effectively when traditional offices are closed.</p>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Accessibility & Insurance</h3>
+
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">CDCP Dentist</h4>
+                <p>As proud participants in the Canadian Dental Care Plan, we strive to make essential dental services accessible to eligible Canadians. Our administrative team is well-versed in CDCP guidelines, helping you maximize your benefits for preventive and restorative procedures. We believe in inclusive care that removes financial barriers to maintaining optimal oral hygiene.</p>
+
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">Dentist Near Me North York</h4>
+                <p>Convenience plays a significant role in consistent dental care, which is why our central location serves residents across the area. Easy access via public transit and major roadways ensures that routine check-ups and emergency visits fit seamlessly into your schedule. We aim to be the most accessible and responsive choice for your neighborhood dental needs.</p>
+
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">Walk In Dentist North York</h4>
+                <p>Spontaneous dental issues require a flexible approach that traditional appointment-only models often fail to provide. Our walk-in capabilities allow patients to receive timely assessments and immediate interventions without weeks of waiting. This approach minimizes the risk of minor issues escalating into complex problems requiring extensive treatment later.</p>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Specialized Treatments</h3>
+
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">Orthodontist North York</h4>
+                <p>Straightening teeth is not just about aesthetics but also about improving bite function and long-term oral hygiene. Our orthodontic services include modern solutions like clear aligners and traditional braces tailored to both teens and adults. We design personalized treatment plans that align with your lifestyle while delivering predictable and lasting results.</p>
+
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">Dental Implants North York</h4>
+                <p>Replacing missing teeth with implants offers a permanent solution that restores both function and aesthetic appeal naturally. Our implant specialists use precise planning software to place titanium posts that integrate seamlessly with your jawbone. This foundation supports custom crowns that look, feel, and function like your original natural teeth.</p>
+
+                <h4 class="text-xl font-bold text-brand mt-6 mb-2">Tooth Extraction North York</h4>
+                <p>While preserving natural teeth is always our goal, some situations necessitate safe and gentle removal to protect overall health. Our surgeons perform extractions using minimally invasive techniques that reduce recovery time and post-operative discomfort. We provide detailed aftercare instructions to ensure proper healing and prevent complications following the procedure.</p>
+
+            </div>
+        </div>
+    </article>
+
+    <!-- CTA Section -->
+    <section id="contact" class="bg-brand py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Smile with Confidence?</h2>
+            <p class="text-brand-light text-lg mb-8 max-w-2xl mx-auto">Whether you need a routine cleaning or emergency pain relief, our North York team is here to help. Book your appointment online or call us today.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-white text-brand font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition transform hover:-translate-y-1">
+                    Book Online Now
+                </button>
+                <button class="bg-brand-dark text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-900 transition transform hover:-translate-y-1 border border-white/20">
+                    Call (416) 555-0199
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <span class="text-2xl font-bold text-white mb-4 block">Dental Office North York</span>
+                <p class="text-sm text-gray-400 max-w-xs">Providing exceptional dental care with a focus on patient comfort, advanced technology, and emergency accessibility in the heart of North York.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-brand transition">Home</a></li>
+                    <li><a href="#services" class="hover:text-brand transition">Services</a></li>
+                    <li><a href="#emergency" class="hover:text-brand transition">Emergency Care</a></li>
+                    <li><a href="#" class="hover:text-brand transition">New Patients</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>123 Yonge Street, North York, ON</li>
+                    <li>(416) 555-0199</li>
+                    <li>info@dentalofficenorthyork.ca</li>
+                    <li class="text-brand">Mon-Sun: 8am - 8pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2024 Dental Office North York. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
